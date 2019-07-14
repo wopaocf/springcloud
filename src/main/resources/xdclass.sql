@@ -73,7 +73,7 @@ primary key (id)
 ) ENGINE=InnoDB DEFAULT  CHARSET=utf8;
 
 
-DROP TABLE  IF EXISTS  video_order;
+
 
 create table video_order(
 id int(11)  unsigned NOT NULL AUTO_INCREMENT,
