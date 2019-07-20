@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.104:3306/xdclass
+    username: root
+    password: a4183129cf
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 192.168.0.104
+    port: 6379
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mapper/*.xml
+server:
+  port: 8082
+#===================΢�����==============================
+#���ں�
+wechat:
+  mpAppId: wxp5e2qf7lp13c7592
+  mpAppSecret: 83tuk69cdyn7x18tjym5exa5262nw76i
+#===================΢�����==============================
+#����ƽ̨
+  openAppId: wx025575eac69a2d5b
+  openAppSecret: f5b6730c592ac15b8b1a5aeb8948a9f3
+  openRedirectUrl:  https://16webtest.ngrok.xiaomiqiu.cn/api/v1/wechat/user/callback
+  OPEN_QRCODE_URL:  https://open.weixin.qq.com/connect/qrconnect?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_login&state=%s#wechat_redirect
+  OPEN_ACCESS_TOKEN_URL: https://api.weixin.qq.com/sns/oauth2/access_token?appid=%s&secret=%s&code=%s&grant_type=authorization_code
+  OPEN_USER_INFO_URL: https://api.weixin.qq.com/sns/userinfo?access_token=%s&openid=%s&lang=zh_CN
+#支付配置
+#微信商户平台
+  mer_id: 4731223188
+  key: 76hIsNF132S91sZ4XRgKyNM0L55bXut9
+  callback: https://16webtest.ngrok.xiaomiqiu.cn/api/v1/wechat/order/callback
+  UNIFIED_ORDER_URL: http://api.xdclass.net/pay/unifiedorder
