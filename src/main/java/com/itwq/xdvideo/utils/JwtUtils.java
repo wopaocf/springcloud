@@ -13,7 +13,7 @@ import java.util.Date;
 public class JwtUtils {
          public static final String SUBJECT="xdclass";
          public static long EXPIRE=1000*60*60*24*7;//过期时间一周
-         public static final String APPSECRET="xd52122";//密钥
+         public static final String APPSECRET="xd52122444";//密钥
 
     /**
      * 生成token
