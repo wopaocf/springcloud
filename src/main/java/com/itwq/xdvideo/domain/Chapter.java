@@ -10,6 +10,7 @@ public class Chapter implements Serializable {
 
   private Integer id;
   private Integer videoId;
+  private String id2;
   private String title;
   private Integer ordered;
   private java.util.Date createTime;
